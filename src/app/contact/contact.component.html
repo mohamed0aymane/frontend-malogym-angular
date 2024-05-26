@@ -1,0 +1,84 @@
+
+
+<section class="contact">
+    <h1 data-aos="zoom-in-right" data-aos-duration="900">Pour plus d'information <br> <br>Contactez-nous</h1>
+    <div class="registartion-form m-3 p-4 ">
+        <div class="content">
+            
+            <br><br>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+              
+                <div class="box" data-aos="fade-up-right" data-aos-duration="1500">
+                    <div class="icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></div>
+                    <div class="text" >
+                        <h3>Téléphone </h3>
+                        <p>+212 6 0000-0000</p>
+                    </div>
+
+                </div>
+                <div class="box" data-aos="fade-up-right" data-aos-duration="1500">
+                    <div class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+                    <div class="text" >
+                        <h3>E-mail</h3>
+                        <p>malogym&#64;gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="box" data-aos="fade-up-right" data-aos-duration="900">
+                    <div class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Notre localisation</h3>
+                        <div class="gps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105816.68568458094!2d-5.084142565169459!3d34.0240776521058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8b484d445777%3A0x10e6aaaeedd802ef!2sFes!5e0!3m2!1sen!2sma!4v1711073910848!5m2!1sen!2sma" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>                    
+            </div>
+
+                </div>
+               
+               
+            
+            </div>
+
+
+            <form #contactForm="ngForm" (ngSubmit)="saveContact(contactForm)">
+                <div class="row" data-aos="fade-up-left" data-aos-duration="900">
+                    <mat-form-field appearance="outline">
+                       
+                        <input  matInput name="contactId" [(ngModel)]="contact.contactId" disabled>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nom complet</mat-label>
+                        <input matInput placeholder="Full Name" name="contactName" [(ngModel)]="contact.contactName">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>E-mail</mat-label>
+                        <input matInput placeholder="Email" name="contactEmail" [(ngModel)]="contact.contactEmail">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Votre message</mat-label>
+                        <input matInput placeholder="Message" name="contactMessage" [(ngModel)]="contact.contactMessage">
+                    </mat-form-field>
+
+                </div>
+                <div>
+                    <button mat-raised-button class="m-2" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Annuler</button>
+                    <button mat-raised-button class="m-2" data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Sauvergader</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+    </div>
+</section>

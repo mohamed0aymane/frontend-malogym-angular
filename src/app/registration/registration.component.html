@@ -1,0 +1,117 @@
+<section class="inscrire">
+
+    <div class="registartion-form m-3 p-4 ">
+       
+        <form #adherantForm="ngForm" (ngSubmit)="saveAdherant(adherantForm)">
+            <h1 data-aos="zoom-in-right" data-aos-duration="900">S'inscrire</h1>
+                <div class="row" data-aos="fade-up-left" data-aos-duration="900">
+                <mat-form-field appearance="outline">
+                    <mat-label> Id</mat-label>
+                    <input matInput placeholder=" Id" name="adherantId" [(ngModel)]="adherant.adherantId" disabled>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field appearance="outline">
+                    <mat-label> Nom</mat-label>
+                    <input matInput placeholder="Nom" name="adherantNom" [(ngModel)]="adherant.adherantNom">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Prénom</mat-label>
+                    <input matInput placeholder=" Nom" name="adherantPrenom" [(ngModel)]="adherant.adherantPrenom">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Âge</mat-label>
+                    <input matInput placeholder=" Age" name="adherantAge" [(ngModel)]="adherant.adherantAge">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>CIN</mat-label>
+                    <input matInput placeholder="Cin" name="adherantCin" [(ngModel)]="adherant.adherantCin">
+                    <mat-icon matSuffix>person</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Poids</mat-label>
+                    <input matInput placeholder=" Poids" name="adherantPoids" [(ngModel)]="adherant.adherantPoids">
+                    <mat-icon matSuffix>weight</mat-icon>
+                    <mat-hint>En KG</mat-hint>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Taille</mat-label>
+                    <input matInput placeholder="Taille" name="adherantTaille" [(ngModel)]="adherant.adherantTaille">
+                    <mat-icon matSuffix>height</mat-icon>
+                    <mat-hint>En M</mat-hint>
+                </mat-form-field>
+
+                
+                <mat-form-field appearance="outline">
+                    <mat-label>Adresse</mat-label>
+                    <input matInput placeholder="Adress" name="adherantAdress" [(ngModel)]="adherant.adherantAdress">
+                    <mat-icon matSuffix>apartment</mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field appearance="outline">
+                    <mat-label>Téléphone</mat-label>
+                    <input matInput placeholder="Numero Telephone" name="adherantContactNumber" [(ngModel)]="adherant.adherantContactNumber">
+                    <mat-icon matSuffix>call</mat-icon>
+                    
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Etat Médical</mat-label>
+                    <input matInput placeholder="Etat Medical" name="adherantEtatMedical" [(ngModel)]="adherant.adherantEtatMedical">
+                    
+                </mat-form-field>
+        
+        
+                <mat-form-field>
+                    <mat-label>Votre paquet</mat-label>
+                    <mat-select name="adherantPack" [(ngModel)]="adherant.adherantPack">
+                        <mat-option value="Golden">OR</mat-option>
+                        <mat-option value="Silver" >Argent</mat-option>
+                        <mat-option value="Normal">Normal</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Durée</mat-label>
+                    <input matInput placeholder="Dure" name="adherantDure" [(ngModel)]="adherant.adherantDure">
+                    <mat-icon matSuffix>apartment</mat-icon>
+                </mat-form-field>
+            
+                <mat-form-field appearance="outline">
+                    <mat-label>Date</mat-label>
+                    <input matInput placeholder="Date" name="adherantDate" [(ngModel)]="adherant.adherantDate">
+                    <mat-icon matSuffix>calendar_month</mat-icon>
+                    <mat-hint>dd-mm-yyyy</mat-hint>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Mot de Passe</mat-label>
+                    <input matInput   placeholder="Mot de Passe" name="adherantMotPasse" [(ngModel)]="adherant.adherantMotPasse">
+                    <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+        
+               
+        
+               </div>
+                    <div >
+                    <button mat-raised-button class="m-2" data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Annuler</button>
+                    <button mat-raised-button class="m-2" data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">Sauvegarder</button>
+                    </div>
+        
+        </form>
+        
+       
+    </div>
+</section>

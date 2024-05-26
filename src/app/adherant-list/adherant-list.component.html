@@ -1,0 +1,111 @@
+<section class="contact">
+    <div class="content">
+        <div class="d-flex justify-content-between mt-20">
+            <button routerLink="/contact-list" mat-raised-button color="accent">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Retourner à la liste des réactions
+            </button>
+        </div>
+        <div class="mat-elevation-z8 " align="center" class="mt-2">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+                <ng-container matColumnDef="adherantId">
+                    <th mat-header-cell *matHeaderCellDef>Id </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantId}} </td>
+                </ng-container>
+
+
+                <ng-container matColumnDef="adherantNom">
+                    <th mat-header-cell *matHeaderCellDef> Nom </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantNom}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantPrenom">
+                    <th mat-header-cell *matHeaderCellDef> Prénom </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantPrenom}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantAge">
+                    <th mat-header-cell *matHeaderCellDef> Âge </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantAge}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantCin">
+                    <th mat-header-cell *matHeaderCellDef> Cin </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantCin}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantPoids">
+                    <th mat-header-cell *matHeaderCellDef> Poids </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantPoids}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantTaille">
+                    <th mat-header-cell *matHeaderCellDef> Taille </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantTaille}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantAdress">
+                    <th mat-header-cell *matHeaderCellDef> Adress </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantAdress}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantContactNumber">
+                    <th mat-header-cell *matHeaderCellDef>  Téléphone </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantContactNumber}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantEtatMedical">
+                    <th mat-header-cell *matHeaderCellDef> Etat Médicale </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantEtatMedical}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantPack">
+                    <th mat-header-cell *matHeaderCellDef> Paquet </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantPack}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantDure">
+                    <th mat-header-cell *matHeaderCellDef> Durée </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantDure}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantDate">
+                    <th mat-header-cell *matHeaderCellDef> Date</th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantDate}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="adherantMotPasse">
+                    <th mat-header-cell *matHeaderCellDef>Mot de Passe </th>
+                    <td mat-cell *matCellDef="let element"> {{element.adherantMotPasse}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="update">
+                    <th mat-header-cell *matHeaderCellDef>Modifier </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button color="primary" aria-label="Example icon button with a heart icon"
+                            (click)="updateAdherant(element.adherantId)">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef>Supprimer </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon"
+                            (click)="deleteAdherant(element.adherantId)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+</section>

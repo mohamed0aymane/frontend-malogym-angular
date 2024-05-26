@@ -1,0 +1,115 @@
+
+h1{
+    margin-top:40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+   
+}
+
+  .subscription-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .subscription-box {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .subscription-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .subscription-box img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .subscription-box h2 {
+    margin-top: 10px;
+  }
+  
+  .subscription-box .price {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  .subscription-box button{
+    width: 30%;
+    background:white;
+    border: 2px solid rgba(255,255,255,.2);
+    margin-left: 20px;
+    
+   
+    color:var(--primary-color);
+
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    height: 45px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    align-items: center;
+  }
+  .additional-details{
+    width: 30%;
+    margin-top: 20px ;
+    margin-left: 510px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    
+    
+  }
+  .additional-details p{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+ .subscription-box button:hover {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .subscription-box {
+      width: 45%;
+    }
+    .additional-details{
+      width: 45%;
+      margin-left: 190px;
+    }
+    .subscription-box button {
+      margin-top:20px;
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .subscription-box {
+      width: 90%;
+    }
+    .additional-details{
+      width: 90%;
+      margin-left: 20px;
+
+    }
+  }
+  

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top " >
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""  data-aos="fade-left" data-aos-duration="1800"><span>MALO</span>GYM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" [class.mobile_menu]="menuValue" >
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1800">
+            <a class="nav-link active" aria-current="page" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">Acceuil</a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1700">
+            <a class="nav-link" routerLink="package" routerLinkActive="active-link" (click)="closeMenu()">Abonnement</a>
+          </li>
+         
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1600">
+            <a class="nav-link" routerLink="activite"  routerLinkActive="active-link" (click)="closeMenu()">Activités </a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1500">
+            <a class="nav-link" routerLink="team"  routerLinkActive="active-link" (click)="closeMenu()">Equipe </a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1400" >
+            <a class="nav-link" routerLink="contact"  routerLinkActive="active-link" (click)="closeMenu()">Contact</a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="1300">
+            <a class="nav-link"  routerLink="about" routerLinkActive="active-link" (click)="closeMenu()"> À Propos</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+</nav>

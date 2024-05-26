@@ -1,0 +1,36 @@
+<br><br><br>
+<h1 data-aos="zoom-in-right" data-aos-duration="900">Abonnez vous et <br><br>profitez de nos offres</h1>
+  <div class="subscription-container" data-aos="fade-up-left" data-aos-duration="1500">
+    <div class="subscription-box gold" data-aos="fade-up-right" data-aos-duration="1400">
+      <img src="../../../assets/img/acceuil.jpg" alt="Gold Membership" (click)="showDetails('gold')">
+      <h2>Paquet OR</h2>
+      <p class="price">2700 DH</p>
+      <p class="description">Vous avez une duree de 12 mois.</p>
+      <button (click)="showMore('gold')">Plus </button>
+      <button routerLink="/register">S'inscrire</button>
+    </div>
+    <div class="subscription-box silver" data-aos="fade-up-right" data-aos-duration="1600">
+      <img src="../../../assets/img/acceuil.jpg"  alt="Silver Membership" (click)="showDetails('silver')">
+      <h2>Paquet ARGENT</h2>
+      <p class="price">2400 DH</p>
+      <p class="description">Vous avez une duree de 10 mois.</p>
+      <button (click)="showMore('silver')">Plus</button>
+      <button routerLink="/register">S'inscrire</button>
+    </div>
+    <div class="subscription-box normal" data-aos="fade-up-right" data-aos-duration="1800">
+      <img src="../../../assets/img/acceuil.jpg"  alt="Normal Membership" (click)="showDetails('normal')">
+      <h2>Paquet NORMAL</h2>
+      <p class="price">2000 DH</p>
+      <p class="description">Vous avez une duree de 8 mois.</p>
+      <button (click)="showMore('normal')">Plus </button>
+      <button routerLink="/register">S'inscrire</button>
+    </div>
+  </div>
+  
+  <div *ngIf="showDetailsFlag" class="additional-details">
+    <h3>Des informations de plus</h3>
+    <li>{{ additionalDetails }}</li>
+
+  </div>
+  <br><br><br>
+  

@@ -1,0 +1,190 @@
+<div class="banner">
+    <video src="../../../assets/video/back.mp4" autoplay muted loop type="mp4"></video>
+    <div class="textbox" data-aos="fade-up-right" data-aos-duration="1500">
+        <h2>Bienvenue dans le site officiel de MALOGym</h2>
+        <h3>Rejoignez nous et plongez dans une <br/>expérience fitness de premier plan</h3>
+        <p> Chez MALOGym, nous croyons en la puissance de la transformation physique et mentale, et nous sommes dévoués à vous aider à atteindre vos objectifs de santé et de bien-être.
+            . Notre salle de sport combine l'énergie d'un club dynamique avec la sophistication d'un centre de bien-être haut de gamme, créant ainsi l'environnement parfait pour atteindre vos objectifs de remise en forme.
+         </p>
+         <a routerLink="/package"  data-aos="flip-right"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="1500">S'abonner</a>
+         <a routerLink="/connecter" data-aos="flip-right"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="1500">Se connecter</a>
+         
+    </div>
+    
+</div>
+<div class="carousel-container"  data-aos="flip-right"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="1500">
+           <h1 data-aos="fade-up-right" data-aos-duration="1500">Découvrez notre salle</h1>   
+           <hr>
+    <div class="carousel">
+      <img [src]="images[currentIndex]" alt="Image" class="carousel-image">
+    </div>
+    <div class="controls">
+      <button (click)="prev()" class="prev-btn">&lt;</button>
+      <button (click)="next()" class="next-btn">&gt;</button>
+    </div>
+    
+    
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <!-- conseil-->
+    <div id="contain" class="container px-4 px-lg-5"  data-aos="fade-up-right" data-aos-duration="1500">
+
+        <div class="container py-5">
+          <h1  class="text-center py-3">Conseils de Bien-Être pour nos Membres</h1>
+          
+          <div class="row row-cols-1 row-cols-md-3 g-4 py-3">
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                        <img src="../../assets/img/echauffement.png" class="bi "/>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title"> Échauffement et Étirements</h3>
+                          <p class="card-text">Avant de commencer toute séance d’entraînement, il est essentiel de bien s’échauffer pour préparer votre corps à l’effort. De même, n’oubliez pas de vous étirer après l’entraînement pour favoriser la récupération et prévenir les blessures.</p>
+                          <!--15 lorem-->
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                        <img src="../../assets/img/lhydratation.png" class="bi"/>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title"> Hydratation</h3>
+                          <p class="card-text">  Buvez suffisamment d’eau avant, pendant et après vos séances. L'hydratation est cruciale pour maintenir une performance optimale et pour aider à la récupération musculaire.</p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                        <img  src="../../assets/img/feijoada.png" class="bi "/>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title"> Nutrition Équilibrée</h3>
+                          <p class="card-text">Une alimentation saine et équilibrée est la clé pour atteindre vos objectifs de fitness. Consommez des protéines maigres, des glucides complexes, des fruits, et des légumes pour alimenter votre corps correctement.</p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                          <img  src="../../assets/img/se-reposer.png" class="bi "/>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Repos et Récupération</h3>
+                          <p class="card-text">Le repos est tout aussi important que l’entraînement. Assurez-vous de dormir suffisamment et de prendre des jours de repos pour permettre à vos muscles de récupérer et de se renforcer.</p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                          <img src="../../assets/img/objectif.png" class="bi ">
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Objectifs Réalistes</h3>
+                          <p class="card-text">Fixez-vous des objectifs réalistes et progressifs. Cela vous aidera à rester motivé et à éviter les frustrations. Célébrez vos petites victoires en cours de route !</p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                      <div class="icondiv d-flex justify-content-center">
+                          <img src="../../assets/img/salle-de-sport.png" class="bi"/>
+                      </div>
+                      <div class="card-body">
+                          <h3 class="card-title">Équipement Approprié</h3>
+                          <p class="card-text">Utilisez des vêtements et des chaussures adaptés à votre type d’entraînement pour améliorer votre confort et prévenir les blessures.</p>
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <br/> <br/> <br/>
+  
+    <!-- testimonials-->
+<div id="containtest" data-aos="fade-up-left" data-aos-duration="1500">
+      <section class='testimonials'>
+        <div class='container'>
+          <div class='testimonials-heading'>
+            <h1>Témoignages de notre clientèle</h1>
+            <hr>
+          </div>
+          <div class='row testimonials-row'>
+            <div class='col-xs-12 col-md-4 testimonials-col'>
+              <div class="testimonial">
+                <div class='testimonial-img'>
+                  <img src="../../assets/img/etoile1.jpg" >
+                </div>
+                <div class="testimonial-name">Saad, 37ans</div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p>
+                  Ce que j'apprécie le plus ici, c'est l'ambiance conviviale et le soutien constant. Les équipements sont de haute qualité et toujours disponibles. J'ai pu suivre un programme de musculation personnalisé qui m'a aidé à gagner en masse musculaire de manière efficace et sécurisée. Merci à toute l'équipe pour leur dévouement !
+                </p>
+              </div>
+            </div>
+            <div class='col-xs-12 col-md-4 testimonials-col'>
+              <div class="testimonial">
+                <div class='testimonial-img'>
+                  <img src="../../assets/img/etoile2.jpg" >
+                </div>
+                <div class="testimonial-name">Fatima, 67ans</div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p>
+                  Rejoindre cette salle de sport a été l'une des meilleures décisions de ma vie. À mon âge, rester actif est crucial pour maintenir une bonne santé, et l'équipe ici le comprend parfaitement. Les coachs sont très attentifs et m'ont aidée à adapter mon programme d'entraînement à mes capacités.
+                </p>
+              </div>
+            </div>
+            <div class='col-xs-12 col-md-4 testimonials-col'>
+              <div class="testimonial">
+                <div class='testimonial-img'>
+                  <img src="../../assets/img/etoile3.jpg">
+                </div>
+                <div class="testimonial-name">Meryem, 19ans</div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <p>
+                  En tant qu'étudiante,  les cours d'aérobic m'ont aidé à déstresser après une longue journée de cours. Le caoch Ahmed est fantastique, toujours motivant et prêt à nous pousser à dépasser nos limites. C'est l'endroit idéal pour les étudiants qui veulent rester en forme.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
